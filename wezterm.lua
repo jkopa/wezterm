@@ -5,12 +5,6 @@ local config = {}
 
 if wezterm.config_builder then config = wezterm.config_builder() end
 
---config.color_schemes = {
---    ['rose-pine'] = {
---    background = 'black',
---  },
---}
-
 config.color_scheme = "Argonaut"
 
 config.window_background_opacity = 0.98
@@ -18,6 +12,8 @@ config.window_decorations = "RESIZE"
 config.window_close_confirmation = "AlwaysPrompt"
 config.scrollback_lines = 3000
 config.default_workspace = "home"
+
+config.font_size = 12
 
 config.use_fancy_tab_bar = false
 config.tab_bar_at_bottom = true
@@ -131,7 +127,7 @@ config.key_tables = {
     }
 }
 
-local git_shell = {"C:\\Program Files\\Git\\bin\\bash.exe", "-i", "-l"}
+local git_shell = {"C:\\Users\\Jarek\\AppData\\Local\\Programs\\Git\\bin\\bash.exe", "-i", "-l"}
 
 if wezterm.target_triple == 'x86_64-pc-windows-msvc' then
   config.default_prog = git_shell
