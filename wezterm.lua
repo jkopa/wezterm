@@ -20,6 +20,8 @@ config.tab_bar_at_bottom = true
 
 config.status_update_interval = 1000
 
+config.check_for_updates = false
+
 wezterm.on("update-right-status", function (window, pane)
     local ws = window:active_workspace()
 
