@@ -130,7 +130,7 @@ config.key_tables = {
 }
 
 local shell = {
-    "cmd", "/k %userprofile%\\.config\\wezterm\\devenv.bat"
+    "cmd", "/k %userprofile%\\.config\\wezterm\\wezterm\\devenv.bat"
 }
 
 if wezterm.target_triple == 'x86_64-pc-windows-msvc' then
