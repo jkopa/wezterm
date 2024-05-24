@@ -129,10 +129,12 @@ config.key_tables = {
     }
 }
 
-local git_shell = {"C:\\Users\\Jarek\\AppData\\Local\\Programs\\Git\\bin\\bash.exe", "-i", "-l"}
+local shell = {
+    "cmd", "/k %userprofile%\\.config\\wezterm\\devenv.bat"
+}
 
 if wezterm.target_triple == 'x86_64-pc-windows-msvc' then
-  config.default_prog = git_shell
+  config.default_prog = shell
 end
 
 return config
