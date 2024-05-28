@@ -5,7 +5,8 @@ local config = {}
 
 if wezterm.config_builder then config = wezterm.config_builder() end
 
-config.color_scheme = "Argonaut"
+--config.color_scheme = "Argonaut"
+config.color_scheme = 'Horizon Dark (Gogh)'
 
 config.window_background_opacity = 0.98
 config.window_decorations = "RESIZE"
