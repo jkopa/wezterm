@@ -6,7 +6,7 @@ local config = {}
 if wezterm.config_builder then config = wezterm.config_builder() end
 
 --config.color_scheme = "Argonaut"
-config.color_scheme = 'Horizon Dark (Gogh)'
+config.color_scheme = 'Red Planet'
 
 config.window_background_opacity = 0.98
 config.window_decorations = "RESIZE"
@@ -14,7 +14,11 @@ config.window_close_confirmation = "AlwaysPrompt"
 config.scrollback_lines = 3000
 config.default_workspace = "home"
 
-config.font_size = 12
+
+config.font_dirs = { 'fonts' }
+config.font_locator = 'ConfigDirsOnly'
+config.font = wezterm.font 'VT323'
+config.font_size = 18
 
 config.use_fancy_tab_bar = false
 config.tab_bar_at_bottom = true
