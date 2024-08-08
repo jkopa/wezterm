@@ -17,8 +17,8 @@ config.default_workspace = "home"
 
 config.font_dirs = { 'fonts' }
 config.font_locator = 'ConfigDirsOnly'
-config.font = wezterm.font 'VT323'
-config.font_size = 18
+config.font = wezterm.font 'Iosevka'
+config.font_size = 14
 
 config.use_fancy_tab_bar = false
 config.tab_bar_at_bottom = true
