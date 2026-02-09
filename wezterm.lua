@@ -65,16 +65,16 @@ config.font_size = 14
 config.font_rules = {
     {
         intensity = 'Bold',
-        font = wezterm.font('Iosevka Term', { weight = 'ExtraBold' }),
+        font = wezterm.font('Iosevka Term Slab', { weight = 'ExtraBold' }),
     },
     {
         italic = true,
-        font = wezterm.font('Iosevka Term', { weight = 'Medium', italic = true }),
+        font = wezterm.font('Iosevka Term Slab', { weight = 'Medium', italic = true }),
     },
     {
         italic = true,
         intensity = 'Bold',
-        font = wezterm.font('Iosevka Term', { weight = 'ExtraBold', italic = true }),
+        font = wezterm.font('Iosevka Term Slab', { weight = 'ExtraBold', italic = true }),
     },
 }
 
