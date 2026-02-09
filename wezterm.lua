@@ -60,7 +60,7 @@ config.scrollback_lines = 3000
 config.default_workspace = "home"
 
 -- Font settings from Rio: Iosevka Term, size 16
-config.font = wezterm.font('Iosevka Term', { weight = 'Medium' })
+config.font = wezterm.font('Iosevka Term Slab', { weight = 'Medium' })
 config.font_size = 14
 config.font_rules = {
     {
