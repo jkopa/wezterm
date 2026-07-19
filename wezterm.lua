@@ -54,7 +54,7 @@ config.colors = {
 
 -- Window settings from Rio
 config.window_background_opacity = 0.95
-config.window_decorations = "RESIZE"
+config.window_decorations = "TITLE | RESIZE"
 config.window_close_confirmation = "AlwaysPrompt"
 config.scrollback_lines = 3000
 config.default_workspace = "home"
@@ -196,7 +196,7 @@ local function get_ip_address()
     if is_windows then
         local success, stdout, stderr = wezterm.run_child_process({
             "powershell", "-NoProfile", "-Command",
-            "(Get-NetIPAddress -AddressFamily IPv4 | Where-Object {$_.IPAddress -notlike '127.*' -and $_.PrefixOrigin -ne 'WellKnown'} | Select-Object -First 1 -ExpandProperty IPAddress)"
+            "(Get-NetIPAddress -AddressFamily IPv4 | Where-Object {$_.IPAddress -notlike '127.*' -and $_.PrefixOrigin -ne 'WellKnown'} | Sort-Object -Property InterfaceMetric | Select-Object -First 1 -ExpandProperty IPAddress)"
         })
         if success then
             return stdout:gsub("%s+", "")
