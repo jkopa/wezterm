@@ -60,6 +60,9 @@ config.scrollback_lines = 3000
 config.default_workspace = "home"
 
 -- Font settings from Rio: Iosevka Term, size 16
+-- ~/.config/wezterm is a symlink into the dot repo, and wezterm's default font
+-- search doesn't resolve through it, so point font_dirs at the bundled fonts.
+config.font_dirs = { wezterm.config_dir .. '/fonts' }
 config.font = wezterm.font('Iosevka Term Slab', { weight = 'Medium' })
 config.font_size = 14
 config.font_rules = {
